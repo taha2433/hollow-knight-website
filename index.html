@@ -26,6 +26,7 @@ section{padding:55px 0;scroll-margin-top:80px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}
 .card{background:linear-gradient(145deg,rgba(27,42,59,.88),rgba(10,15,24,.94));border:1px solid var(--line);border-radius:15px;padding:18px;transition:.25s;min-height:160px}
 .card:hover{transform:translateY(-4px);border-color:#8bcce8;box-shadow:0 12px 30px #0006}
+.character-art{display:block;width:100%;height:190px;object-fit:contain;margin:0 auto 12px;border-radius:10px;background:rgba(0,0,0,.18)}
 .card h3{margin:0 0 5px;color:#d9efff;font-size:1.1rem}.tag{display:inline-block;font-size:.72rem;color:#9dd9ee;border:1px solid #5b9db3;border-radius:20px;padding:0 9px;margin:0 0 8px}
 .card p{margin:0;color:#c0ccda;font-size:.9rem}
 .timeline{border-right:2px solid #53819b;margin:20px 10px;padding-right:22px}.event{position:relative;margin:0 0 22px}.event:before{content:"";position:absolute;right:-29px;top:12px;width:10px;height:10px;border-radius:50%;background:#9bd8f2;box-shadow:0 0 12px #70d5ff}
@@ -72,7 +73,7 @@ footer{text-align:center;color:#8192a6;padding:35px 15px;border-top:1px solid va
 <section id="characters"><div class="section-head"><small>THE INHABITANTS</small><h2>شخصیت‌های مهم</h2><p>نام انگلیسی هر شخصیت کنار نام فارسی آمده تا پیدا کردن اطلاعات بیشتر آسان باشد.</p></div>
 <input class="searchbar" id="characterSearch" placeholder="جست‌وجوی شخصیت؛ مثلاً Hornet یا هورنت..." aria-label="جست‌وجوی شخصیت">
 <div class="grid" id="characterGrid">
-<article class="card"><span class="tag">قهرمان</span><h3>The Knight — شوالیه</h3><p>قهرمان قابل‌بازی؛ یکی از ظرف‌های متولدشده از خلأ که به هالونست بازمی‌گردد و سرنوشت عفونت را تغییر می‌دهد.</p></article>
+<article class="card"><span class="tag">قهرمان</span><img class="character-art" src="https://hollowknight.wiki/w/Special:FilePath/The_Knight.png" alt="The Knight" loading="lazy"><h3>The Knight — شوالیه</h3><p>قهرمان قابل‌بازی؛ یکی از ظرف‌های متولدشده از خلأ که به هالونست بازمی‌گردد و سرنوشت عفونت را تغییر می‌دهد.</p></article>
 <article class="card"><span class="tag">نگهبان</span><h3>Hornet — هورنت</h3><p>دختر هِرا و نگهبان بخش‌هایی از هالونست. ابتدا راه شوالیه را می‌بندد، اما در ادامه نقش مهمی در آزمودن و راهنمایی او دارد.</p></article>
 <article class="card"><span class="tag">پادشاه</span><h3>The Pale King — پیل کینگ</h3><p>فرمانروای سفید هالونست؛ تمدن حشرات را گسترش داد و برای مهار رادیانس نقشه ساخت ظرف‌ها را طراحی کرد.</p></article>
 <article class="card"><span class="tag">خداگونه</span><h3>The Radiance — رادیانس</h3><p>موجود نورانی و سرچشمه عفونت؛ در رؤیاها حضور دارد و از فراموش‌شدن توسط ساکنان هالونست خشمگین است.</p></article>
