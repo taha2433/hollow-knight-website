@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080a10">
+<title>HOLLOW KNIGHT | آرشیو هالونست</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+:root{--bg:#080a10;--panel:rgba(14,20,32,.82);--line:rgba(177,205,231,.18);--text:#e8edf4;--muted:#aab7c8;--blue:#9bd8f2;--cyan:#65cce5;--gold:#d8c59a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080a10;color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;line-height:2}
+.hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px;position:relative;background:linear-gradient(to bottom,rgba(0,0,0,.25),rgba(0,0,0,.55),#080a10),url('https://cdn.wikimg.net/en/hkwiki/images/thumb/a/ae/Screenshot_HK_Resting_Grounds_01.png/1200px-Screenshot_HK_Resting_Grounds_01.png') center/cover no-repeat}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 5%,rgba(4,7,13,.25) 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}.eyebrow{color:#c4d7e8;letter-spacing:5px;font-size:.78rem}
+h1{font-family:Georgia,serif;font-size:clamp(2.7rem,8vw,5.4rem);letter-spacing:clamp(3px,1vw,9px);line-height:1.2;margin:15px 0;color:#fff;text-shadow:0 0 22px #9ddcff,0 4px 20px #000}
+.hero h2{font-family:Georgia,serif;direction:ltr;font-size:1.15rem;letter-spacing:9px;color:#a9c4d7;margin:25px 0}
+.hero p{max-width:650px;margin:25px auto;color:#d0dce8}
+.cta{display:inline-block;padding:10px 25px;border:1px solid #9bd8f2;border-radius:30px;color:#dff6ff;text-decoration:none;transition:.25s}.cta:hover{background:#9bd8f2;color:#07101a;box-shadow:0 0 24px #69c7e6}
+nav{position:sticky;top:0;z-index:5;background:rgba(5,8,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px}
+nav a{color:#c6d6e5;text-decoration:none;padding:6px 12px;border-radius:18px;font-size:.88rem}nav a:hover{background:#24384b;color:white}
+main{max-width:1120px;margin:auto;padding:25px 20px 80px}
+section{padding:55px 0;scroll-margin-top:80px}
+.section-head{text-align:center;margin-bottom:28px}.section-head small{color:var(--cyan);letter-spacing:3px}.section-head h2{font-size:2rem;margin:3px 0 8px}.section-head p{color:var(--muted);max-width:760px;margin:auto}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;margin:14px 0;box-shadow:0 12px 45px #0004}
+.notice{border-right:3px solid var(--gold);color:#e7d9b7;background:#211e19;padding:12px 17px;border-radius:8px;margin:18px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}
+.card{background:linear-gradient(145deg,rgba(27,42,59,.88),rgba(10,15,24,.94));border:1px solid var(--line);border-radius:15px;padding:18px;transition:.25s;min-height:160px}
+.card:hover{transform:translateY(-4px);border-color:#8bcce8;box-shadow:0 12px 30px #0006}
+.card h3{margin:0 0 5px;color:#d9efff;font-size:1.1rem}.tag{display:inline-block;font-size:.72rem;color:#9dd9ee;border:1px solid #5b9db3;border-radius:20px;padding:0 9px;margin:0 0 8px}
+.card p{margin:0;color:#c0ccda;font-size:.9rem}
+.timeline{border-right:2px solid #53819b;margin:20px 10px;padding-right:22px}.event{position:relative;margin:0 0 22px}.event:before{content:"";position:absolute;right:-29px;top:12px;width:10px;height:10px;border-radius:50%;background:#9bd8f2;box-shadow:0 0 12px #70d5ff}
+.event h3{margin:0;color:#d9efff}.event p{margin:3px 0;color:#bdc9d6}
+.searchbar{width:100%;padding:13px 16px;border:1px solid var(--line);background:#0b1320;color:white;border-radius:12px;font:inherit;margin:10px 0 20px;outline:none}.searchbar:focus{border-color:var(--cyan)}
+details{background:#111b29;border:1px solid var(--line);border-radius:12px;padding:13px 17px;margin:10px 0}summary{cursor:pointer;color:#d8efff;font-weight:600}details p{color:#c2ceda;margin-bottom:3px}
+footer{text-align:center;color:#8192a6;padding:35px 15px;border-top:1px solid var(--line);font-size:.83rem}
+.ltr{direction:ltr;display:inline-block;font-family:Georgia,serif;color:#bce8fb}
+@media(max-width:600px){nav{justify-content:flex-start;overflow:auto;flex-wrap:nowrap}nav a{white-space:nowrap}.hero{min-height:80vh}.panel{padding:16px}section{padding:38px 0}}
+</style>
+</head>
+<body>
+<header class="hero" id="top"><div class="hero-inner">
+<div class="eyebrow">یک سفر به اعماق پادشاهی فراموش‌شده</div>
+<h1>HOLLOW KNIGHT</h1><h2>SILKSONG</h2>
+<p>آرشیوی برای شناخت داستان، رازها، شخصیت‌ها، باس‌ها و سرزمین‌های هالونست؛ جایی که هر سکوت، قصه‌ای پنهان دارد.</p>
+<a class="cta" href="#story">ورود به هالونست ↓</a>
+</div></header>
+<nav>
+<a href="#story">داستان</a><a href="#timeline">تاریخچه</a><a href="#characters">شخصیت‌ها</a><a href="#bosses">باس‌ها</a><a href="#places">مناطق</a><a href="#endings">پایان‌ها</a><a href="#mysteries">رازها</a>
+</nav>
+<main>
+<div class="notice">⚠ هشدار اسپویل: این دانشنامه بخش‌های مهم داستان و پایان‌های Hollow Knight را فاش می‌کند.</div>
+<section id="story"><div class="section-head"><small>THE LORE</small><h2>داستان هالونست</h2><p>روایت بازی عمداً تکه‌تکه است؛ این بخش، سرنخ‌های اصلی را کنار هم می‌گذارد.</p></div>
+<div class="panel">
+<h3>پیش از پادشاهی</h3>
+<p>پیش از آن‌که هالونست به تمدنی بزرگ تبدیل شود، بسیاری از حشرات زیر نفوذ موجودی نورانی به نام <b>رادیانس</b> زندگی می‌کردند. رادیانس از راه رؤیاها با ذهن آن‌ها ارتباط داشت و پرستش می‌شد. سپس موجودی اسرارآمیز به نام <b>پیل کینگ</b> به این سرزمین آمد؛ او به حشرات آگاهی و اراده‌ای تازه بخشید و پادشاهی هالونست را بنا کرد. با گسترش نفوذ پادشاه، خاطره و پرستش رادیانس کم‌رنگ شد.</p>
+<h3>بازگشت عفونت</h3>
+<p>رادیانس فراموش‌شدن را نپذیرفت. نور او دوباره در رؤیاها ظاهر شد و ذهن حشرات را آلوده کرد. این بیماری به شکل درخشش نارنجی و رفتارهای بی‌اختیار دیده می‌شود. پادشاه برای متوقف‌کردن آن، به دنبال ظرفی می‌گشت که بتواند رادیانس را درون خود زندانی کند.</p>
+<h3>ظرف‌ها و شوالیه توخالی</h3>
+<p>پیل کینگ و وایت لیدی از خلأ ژرف، فرزندان بسیاری پدید آوردند که به آن‌ها <b>Vessel</b> می‌گویند. قرار بود یکی از آن‌ها ظرفی بی‌احساس و کاملاً خالی باشد. شوالیه توخالی انتخاب شد و رادیانس درون او مهروموم گردید. اما پیوند عاطفی پادشاه با فرزندش باعث شد ظرف آن‌قدرها هم خالی نباشد؛ عفونت سرانجام راهی برای بازگشت پیدا کرد.</p>
+<h3>بازگشت شوالیه</h3>
+<p>شخصیت بازیکن، شوالیه‌ای بی‌نام و از نسل ظرف‌هاست که به هالونست بازمی‌گردد. سه رؤیابین، یعنی مونوما، لورین و هِرا، مهرهای معبد تخم سیاه را نگه می‌دارند. شوالیه با کمک هورنت و با رویارویی با گذشته و کشف قدرت رؤیا، می‌تواند سرنوشت مهروموم را تغییر دهد.</p>
+</div></section>
+<section id="timeline"><div class="section-head"><small>AGES OF HALLOWNEST</small><h2>خط زمانی رویدادها</h2><p>ترتیب تقریبی اتفاقات بر اساس سرنخ‌های محیطی و گفت‌وگوها.</p></div>
+<div class="panel timeline">
+<div class="event"><h3>دوران رادیانس</h3><p>قبیله‌های باستانی، رادیانس را می‌پرستند و در رؤیاهای او زندگی می‌کنند.</p></div>
+<div class="event"><h3>ظهور پیل کینگ</h3><p>پادشاه سفید وارد سرزمین می‌شود، هالونست را شکل می‌دهد و تمدنی تازه می‌سازد.</p></div>
+<div class="event"><h3>آغاز فراموشی</h3><p>نفوذ رادیانس کاهش می‌یابد؛ اما خاطره او در رؤیاها باقی می‌ماند.</p></div>
+<div class="event"><h3>ساخت ظرف‌ها</h3><p>فرزندان خلأ برای مهار رادیانس پدید می‌آیند و شوالیه توخالی برگزیده می‌شود.</p></div>
+<div class="event"><h3>مهروموم و سقوط</h3><p>رؤیابین‌ها معبد را می‌بندند؛ با بازگشت عفونت، پادشاهی رو به ویرانی می‌رود.</p></div>
+<div class="event"><h3>بازگشت شوالیه</h3><p>ماجراجویی بازیکن آغاز می‌شود و پایان هالونست به انتخاب‌ها و کشفیات او وابسته می‌گردد.</p></div>
+</div></section>
+<section id="characters"><div class="section-head"><small>THE INHABITANTS</small><h2>شخصیت‌های مهم</h2><p>نام انگلیسی هر شخصیت کنار نام فارسی آمده تا پیدا کردن اطلاعات بیشتر آسان باشد.</p></div>
+<input class="searchbar" id="characterSearch" placeholder="جست‌وجوی شخصیت؛ مثلاً Hornet یا هورنت..." aria-label="جست‌وجوی شخصیت">
+<div class="grid" id="characterGrid">
+<article class="card"><span class="tag">قهرمان</span><h3>The Knight — شوالیه</h3><p>قهرمان قابل‌بازی؛ یکی از ظرف‌های متولدشده از خلأ که به هالونست بازمی‌گردد و سرنوشت عفونت را تغییر می‌دهد.</p></article>
+<article class="card"><span class="tag">نگهبان</span><h3>Hornet — هورنت</h3><p>دختر هِرا و نگهبان بخش‌هایی از هالونست. ابتدا راه شوالیه را می‌بندد، اما در ادامه نقش مهمی در آزمودن و راهنمایی او دارد.</p></article>
+<article class="card"><span class="tag">پادشاه</span><h3>The Pale King — پیل کینگ</h3><p>فرمانروای سفید هالونست؛ تمدن حشرات را گسترش داد و برای مهار رادیانس نقشه ساخت ظرف‌ها را طراحی کرد.</p></article>
+<article class="card"><span class="tag">خداگونه</span><h3>The Radiance — رادیانس</h3><p>موجود نورانی و سرچشمه عفونت؛ در رؤیاها حضور دارد و از فراموش‌شدن توسط ساکنان هالونست خشمگین است.</p></article>
+<article class="card"><span class="tag">ظرف</span><h3>The Hollow Knight — شوالیه توخالی</h3><p>ظرفی که برای زندانی‌کردن رادیانس انتخاب شد. پیوندش با پادشاه، خالی‌بودن کامل او را زیر سؤال می‌برد.</p></article>
+<article class="card"><span class="tag">ملکه</span><h3>White Lady — بانوی سفید</h3><p>مادر ظرف‌ها و یکی از سرچشمه‌های زندگی سلطنتی؛ در باغ ملکه پنهان شده و از گذشته دردناک خود آگاه است.</p></article>
+<article class="card"><span class="tag">رؤیابین</span><h3>Monomon — مونوما</h3><p>دانشمند و یکی از سه رؤیابین؛ در آرشیو معلم نگهداری می‌شود و مهر یکی از دروازه‌های معبد را حفظ می‌کند.</p></article>
+<article class="card"><span class="tag">رؤیابین</span><h3>Lurien — لورین</h3><p>رؤیابین دیده‌بان که در برج دیده‌بان شهر اشک‌ها می‌ماند و از مهروموم معبد محافظت می‌کند.</p></article>
+<article class="card"><span class="tag">رؤیابین</span><h3>Herrah — هِرا</h3><p>ملکه لانه عمیق و مادر هورنت؛ برای پذیرفتن نقش رؤیابین، بهایی شخصی پرداخت.</p></article>
+<article class="card"><span class="tag">راهنما</span><h3>Elderbug — الدر باگ</h3><p>ساکن سالخورده‌ی Dirtmouth که شوالیه را در آغاز سفر می‌بیند و درباره شهر و تونل‌های زیر آن حرف می‌زند.</p></article>
+<article class="card"><span class="tag">نقشه‌کش</span><h3>Cornifer — کورنیفر</h3><p>نقشه‌کش خوش‌ذوقی که در مناطق مختلف آواز می‌خواند و نقشه‌های هالونست را می‌فروشد.</p></article>
+<article class="card"><span class="tag">فروشنده</span><h3>Iselda — ایسلدا</h3><p>همسر کورنیفر؛ در Dirtmouth فروشگاه ابزار نقشه‌برداری را اداره می‌کند.</p></article>
+<article class="card"><span class="tag">جنگجو</span><h3>Quirrel — کوئرل</h3><p>مسافری کنجکاو با گذشته‌ای مرتبط با مونوما؛ در نقاط مختلف سفر ظاهر می‌شود و در فهم رازهای معبد کمک می‌کند.</p></article>
+<article class="card"><span class="tag">جنگجو</span><h3>Cloth — کلاث</h3><p>ماجراجویی که به دنبال نبردی شایسته است؛ در مسیر خود با شوالیه روبه‌رو می‌شود.</p></article>
+<article class="card"><span class="tag">هنرمند</span><h3>Sheo — شیو</h3><p>یکی از نگهبانان سابق و هنرمندی که زندگی آرامی را برگزیده و نقاشی را به مبارزه ترجیح داده است.</p></article>
+<article class="card"><span class="tag">استاد</span><h3>Oro, Mato & Sheo</h3><p>سه استاد ناخن؛ هرکدام سبک مبارزه و شخصیت متفاوتی دارند و رازهای هنر ناخن را آموزش می‌دهند.</p></article>
+<article class="card"><span class="tag">شوالیه</span><h3>Ze’mer — زِمِر</h3><p>بانوی خاکستری و یکی از جنگجویان قدیمی؛ مأموریت گل ظریف او از تلخ‌ترین داستان‌های فرعی بازی است.</p></article>
+<article class="card"><span class="tag">پژوهشگر</span><h3>Brumm / Nymm — برام / نیم</h3><p>عضوی از گروه گریِم که میان وفاداری به آیین و رهاشدن از آن گرفتار می‌شود.</p></article>
+<article class="card"><span class="tag">رهبر گروه</span><h3>Grimm — گریِم</h3><p>رهبر گروه کابوس؛ آیینی مرموز را در هالونست برپا می‌کند و شوالیه را به اجرای بخش‌هایی از آن فرامی‌خواند.</p></article>
+<article class="card"><span class="tag">جست‌وجوگر</span><h3>Bretta — برتا</h3><p>حشره‌ای تنها که پس از نجات، در Dirtmouth ساکن می‌شود و به شوالیه علاقه‌مند می‌گردد.</p></article>
+<article class="card"><span class="tag">پژوهشگر</span><h3>Relic Seeker Lemm — لم</h3><p>عتیقه‌فروشی در شهر اشک‌ها که آثار تمدن گذشته را جمع‌آوری می‌کند.</p></article>
+<article class="card"><span class="tag">نگهبان</span><h3>Dryya, Hegemol, Isma, Ze’mer</h3><p>از جنگجویان بزرگ پادشاهی؛ هرکدام بخشی از تاریخ دفاع از هالونست را نمایندگی می‌کنند.</p></article>
+<article class="card"><span class="tag">پیر دانا</span><h3>Seer — پیشگو</h3><p>آخرین بازمانده از قبیله ماث؛ درباره Dream Nail و قدرت خاطره‌ها راهنمایی می‌کند.</p></article>
+<article class="card"><span class="tag">موجود مرموز</span><h3>Void Entity — موجود خلأ</h3><p>نامی برای نیروی تاریک و کهنی که در اعماق Abyss حضور دارد و با سرنوشت ظرف‌ها پیوند خورده است.</p></article>
+<article class="card"><span class="tag">نگهبان</span><h3>Godseeker — خدایاب</h3><p>موجودی که خدایان را جست‌وجو می‌کند و شوالیه را به چالش‌های Godhome پیوند می‌دهد.</p></article>
+</div></section>
+<section id="bosses"><div class="section-head"><small>CHALLENGES</small><h2>باس‌ها و دشمنان شاخص</h2><p>این فهرست باس‌های شناخته‌شده و مهم داستانی را معرفی می‌کند؛ همه دشمنان عادی بازی در این بخش نیستند.</p></div>
+<div class="grid">
+<div class="card"><h3>False Knight</h3><p>جنگجویی زره‌پوش که قدرتش را از پوسته‌ای بزرگ می‌گیرد.</p></div>
+<div class="card"><h3>Hornet</h3><p>نگهبان سریع و چابکی که مهارت شوالیه را می‌آزماید.</p></div>
+<div class="card"><h3>Mantis Lords</h3><p>سه فرمانروای قبیله مانتیس؛ نبردی مبتنی بر احترام و زمان‌بندی.</p></div>
+<div class="card"><h3>Soul Master</h3><p>دانشمندی که در جست‌وجوی راهی برای غلبه بر مرگ، از روح سوءاستفاده کرد.</p></div>
+<div class="card"><h3>Watcher Knights</h3><p>نگهبانان برج دیده‌بان که از مسیر رسیدن به لورین محافظت می‌کنند.</p></div>
+<div class="card"><h3>Broken Vessel</h3><p>ظرفی رهاشده که عفونت آن را به حرکت واداشته است.</p></div>
+<div class="card"><h3>Nosk</h3><p>شکارچی تغییرشکل‌دهنده‌ای در Deepnest که از چهره‌های آشنا برای فریب استفاده می‌کند.</p></div>
+<div class="card"><h3>Traitor Lord</h3><p>رهبر تبعیدی مانتیس‌ها که به عفونت و قدرت آن روی آورده است.</p></div>
+<div class="card"><h3>Lost Kin</h3><p>نسخه رؤیایی و خشمگین Broken Vessel.</p></div>
+<div class="card"><h3>Nightmare King Grimm</h3><p>اوج آیین کابوس؛ آزمونی سخت از ریتم و دقت.</p></div>
+<div class="card"><h3>Pure Vessel</h3><p>بازتابی از شوالیه توخالی در دوران اوج قدرتش.</p></div>
+<div class="card"><h3>Absolute Radiance</h3><p>شکل نهایی و رؤیایی رادیانس در چالش‌های Godhome.</p></div>
+</div></section>
+<section id="places"><div class="section-head"><small>THE KINGDOM</small><h2>مناطق هالونست</h2><p>هر منطقه معماری، موسیقی و داستان مخصوص خود را دارد.</p></div>
+<div class="grid">
+<div class="card"><h3>Dirtmouth</h3><p>روستای خاموش بالای پادشاهی؛ نقطه شروع سفر و محل گردهمایی چند شخصیت.</p></div>
+<div class="card"><h3>Forgotten Crossroads</h3><p>چهارراهی مرکزی که راه‌های بسیاری از آن منشعب می‌شوند و بعدها گرفتار عفونت می‌شود.</p></div>
+<div class="card"><h3>Greenpath</h3><p>منطقه‌ای سرسبز با گیاهان زنده و مه سبز؛ قلمرو طبیعی و زیبای هالونست.</p></div>
+<div class="card"><h3>City of Tears</h3><p>پایتخت باشکوه و بارانی؛ یادگار معماری و شکوه دوران پادشاهی.</p></div>
+<div class="card"><h3>Fungal Wastes</h3><p>سرزمین قارچ‌ها و قبیله مانتیس؛ گذرگاهی به چند منطقه مهم.</p></div>
+<div class="card"><h3>Deepnest</h3><p>لانه‌ای تاریک و پیچیده با ساکنانی مرموز و تاریخ مستقل.</p></div>
+<div class="card"><h3>Crystal Peak</h3><p>معدنی پر از بلورهای درخشان که نیروی کار و ماشین‌آلاتش هنوز فعال‌اند.</p></div>
+<div class="card"><h3>Resting Grounds</h3><p>گورستانی آرام که در آن Dream Nail و خاطره مردگان اهمیت پیدا می‌کند.</p></div>
+<div class="card"><h3>Ancient Basin</h3><p>بخشی متروک در عمق پادشاهی؛ راهی به Abyss و راز تولد ظرف‌ها.</p></div>
+<div class="card"><h3>The Abyss</h3><p>ژرف‌ترین بخش شناخته‌شده؛ سرچشمه خلأ و حقیقت تاریک خاندان سلطنتی.</p></div>
+<div class="card"><h3>Queen’s Gardens</h3><p>باغی زیبا اما خطرناک که به بانوی سفید و گذشته سلطنتی مربوط است.</p></div>
+<div class="card"><h3>Kingdom’s Edge</h3><p>مرز شرقی پادشاهی؛ سرزمینی خاکستری که رد پای گذشته را در خود دارد.</p></div>
+</div></section>
+<section id="endings"><div class="section-head"><small>FATES</small><h2>پایان‌های بازی</h2><p>پایان دقیق به آیتم‌ها و کارهایی که پیش از نبرد نهایی انجام می‌دهی بستگی دارد.</p></div>
+<div class="panel">
+<details><summary>The Hollow Knight</summary><p>شوالیه جایگزین ظرف زندانی می‌شود و عفونت دوباره درون ظرف مهروموم می‌گردد؛ چرخه ادامه پیدا می‌کند.</p></details>
+<details><summary>Sealed Siblings</summary><p>هورنت در مهروموم تازه نقش پیدا می‌کند و در کنار شوالیه درون معبد گرفتار می‌شود.</p></details>
+<details><summary>Dream No More</summary><p>با تکمیل مسیر رؤیا و رویارویی با رادیانس، شوالیه به کمک خلأ به سرچشمه عفونت پایان می‌دهد.</p></details>
+<details><summary>Embrace the Void</summary><p>در مسیر Godhome، نیروی خلأ به شکلی گسترده‌تر آزاد می‌شود و سرنوشت خدایاب و هالونست تغییر می‌کند.</p></details>
+<details><summary>Delicate Flower</summary><p>نسخه‌ای متفاوت از پایان Godhome که با رساندن گل ظریف به خدایاب همراه است.</p></details>
+</div></section>
+<section id="mysteries"><div class="section-head"><small>HIDDEN TRUTHS</small><h2>رازهایی که باید به آن‌ها دقت کرد</h2><p>چند موضوع که طرفداران برای فهم داستان درباره‌شان بحث می‌کنند.</p></div>
+<div class="grid">
+<div class="card"><h3>آیا شوالیه واقعاً خالی است؟</h3><p>بازی عمداً پاسخ ساده‌ای نمی‌دهد؛ پیوندها، انتخاب‌ها و رفتار ظرف‌ها این مفهوم را پیچیده می‌کنند.</p></div>
+<div class="card"><h3>ماهیت خلأ چیست؟</h3><p>خلأ فقط تاریکی تصویری نیست؛ نیرویی با اراده و پیوندهای رازآلود با ظرف‌ها و پادشاهی است.</p></div>
+<div class="card"><h3>چرا هورنت متفاوت است؟</h3><p>او فرزند هِرا و پیل کینگ است، اما مانند ظرف‌ها از خلأ ساخته نشده؛ به همین دلیل جایگاه ویژه‌ای دارد.</p></div>
+<div class="card"><h3>آیا رادیانس شر مطلق است؟</h3><p>رادیانس تهدید اصلی داستان است، اما گذشته‌اش نشان می‌دهد که تعارض میان فراموشی، پرستش و قدرت نیز در شکل‌گیری فاجعه نقش دارد.</p></div>
+</div></section>
+<section id="about"><div class="section-head"><small>ABOUT THIS FAN ARCHIVE</small><h2>درباره این دانشنامه</h2></div>
+<div class="panel"><p>این یک پروژه هواداری و غیررسمی است و به Team Cherry وابستگی ندارد. نام‌ها و جهان Hollow Knight متعلق به سازندگان بازی هستند. توضیحات این صفحه با بیان تازه و خلاصه نوشته شده‌اند؛ برای جزئیات بیشتر، بازی و منابع رسمی را ببینید.</p><p>منبع معرفی رسمی بازی: <a class="ltr" href="https://www.hollowknight.com/" target="_blank" rel="noopener">hollowknight.com</a> · سازنده: <a class="ltr" href="https://www.teamcherry.com.au/" target="_blank" rel="noopener">Team Cherry</a></p></div>
+</section>
+</main>
+<footer>HOLLOW KNIGHT — ARCHIVE OF HALLOWNEST · یک پروژه هواداری غیررسمی</footer>
+<script>
+const search=document.getElementById('characterSearch');
+search.addEventListener('input',()=>{
+ const q=search.value.trim().toLocaleLowerCase();
+ document.querySelectorAll('#characterGrid .card').forEach(card=>{
+  card.style.display=card.innerText.toLocaleLowerCase().includes(q)?'':'none';
+ });
+});
+</script>
+</body></html>
